@@ -1,0 +1,370 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- TODO 根据当前选择填写title -->
+    <title>全部订单</title>
+    <link href="../../css/mui3.5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/app.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css" />
+    <style type="text/css">
+    .mui-bar-nav~.mui-content{
+        position: relative;
+    }
+    .order-all-nav {
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        z-index: 999;
+        top: 44px;
+        display: flex;
+        padding: 0 15px;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    .order-all-control {
+        display: block;
+        flex: 1;
+        height: inherit;
+        line-height: 40px;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+
+    }
+    .y-all-order .order-item-pics{
+        width: 100%;
+        overflow-x: scroll;
+        display: inline-block;
+        height: 90px;
+    }
+    .order-item-control{
+        display: inline-block;
+        padding: 0;
+        white-space: nowrap;
+        height: 85px;
+        overflow-x: scroll;
+        text-align: left;
+    }
+    .order-control-item {
+        margin-left:10px;
+    }
+
+    .active {
+        color: #a269c7;
+        border-color: #a269c7;
+    }
+    .item-active {
+        display: block;
+    }
+    .order-all-list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        padding-top: 84px;
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back iconfont icon-jiantou1 mui-pull-left header-back"></a>
+        <h1 class="mui-title">全部订单</h1>
+    </header>
+    <main class="mui-content y-all-order">
+        <!-- <div class="mui-fullscreen mui-slider"> -->
+        <div class=" order-all-nav" style="z-index: 45;">
+            <a data-url="javascript:;" class="order-all-control my-order-all active"  >
+                全部
+            </a>
+            <a data-url="javascript:;" class="order-all-control my-order-dfk" >
+                待付款
+            </a>
+            <a data-url="javascript:;" class="order-all-control my-order-dsh" >
+                待收货
+            </a>
+        </div>
+        <!-- <div class="mui-slider-group"> -->
+        <div id="my-order-all" class="order-all-list" style="display: block;">
+            <div id="scroll1" class=" order-all-wrapper">
+                <!-- TODO 判断是否有订单 没有则显示 -->
+                <div style="display: none;" class="no-history-main shopcart-nohistory-main order-all-nohistory">
+                    <div class="no-history-box">
+                        <span class="iconfont icon-dingdan1 no-history-icon"></span>
+                    </div>
+                    <p class="no-history-disc">暂无相关订单</p>
+                   
+                </div>
+                <!-- END判断结束 -->
+				<!-- START一个订单 -->
+				<div class="m-list m-list2" order_id="{$order[$i]['id']}" >
+					<div class="m-title ui-border-b">
+						<span class="t-ma c-333">单号：1234567890123456</span> 
+						<!-- TODO 判断订单状态 -->
+						<span class="f-fr c-purple order-all-type">交易成功</span> 
+						<!-- END结束判断 -->
+					</div>
+					<!-- START单件商品展示 -->
+					<ul class="mui-table-view">
+					    <li class="mui-table-view-cell">
+					        <a href="javascript:;" class="m-one">
+					            <div class="m-img"><img src="../../img/jrbd1.png"></div>
+					            <span class="m-good-details c-666">示例商品示例商品示例商品示例商品示例商品</span></a>
+					    </li>
+					</ul>
+					<!-- END单件商品展示 -->
+					<!-- START多件商品展示 -->
+					<div style="display: none;" class="mui-slider order-item-pics my-order-dsh-info">
+					    <a href="javascript:;" class=" mui-slider-indicator mui-segmented-control mui-segmented-control-inverted order-item-control">
+					    		<!-- 循环商品图片 -->
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					    </a>
+					</div>
+					<!-- END多件商品展示 -->
+					<div class="m-bottom ovf-h ui-border-t order-con-item-bottom">
+                        	<span>共<span class="c-purple num-goods num-goods">10</span>件商品</span>
+						<a href="javascript:;" class="z-focus btn b-middle my-order-all-pay f-fr">去付款</a>
+					</div>
+				</div>
+				<!-- END一个订单 -->
+				
+				<!-- START示例数据 -->
+				<div class="m-list m-list2" order_id="{$order[$i]['id']}" >
+					<div class="m-title ui-border-b">
+						<span class="t-ma c-333">单号：1234567890123456</span> 
+						<!-- TODO 判断订单状态 -->
+						<span class="f-fr c-purple order-all-type">交易成功</span> 
+						<!-- END结束判断 -->
+					</div>
+					<!-- START多件商品展示 -->
+					<div class="mui-slider order-item-pics my-order-dsh-info">
+					    <a href="javascript:;" class=" mui-slider-indicator mui-segmented-control mui-segmented-control-inverted order-item-control">
+					    		<!-- 循环商品图片 -->
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					    </a>
+					</div>
+					<!-- END多件商品展示 -->
+					<div class="m-bottom ovf-h ui-border-t order-con-item-bottom">
+                        	<span>共<span class="c-purple num-goods num-goods">10</span>件商品</span>
+						<a href="javascript:;" class="z-focus btn b-middle my-order-all-pay f-fr">去付款</a>
+					</div>
+				</div>
+				<div class="m-list m-list2" order_id="{$order[$i]['id']}" >
+					<div class="m-title ui-border-b">
+						<span class="t-ma c-333">单号：1234567890123456</span> 
+						<!-- TODO 判断订单状态 -->
+						<span class="f-fr c-purple order-all-type">交易成功</span> 
+						<!-- END结束判断 -->
+					</div>
+					<!-- START多件商品展示 -->
+					<div class="mui-slider order-item-pics my-order-dsh-info">
+					    <a href="javascript:;" class=" mui-slider-indicator mui-segmented-control mui-segmented-control-inverted order-item-control">
+					    		<!-- 循环商品图片 -->
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					    </a>
+					</div>
+					<!-- END多件商品展示 -->
+					<div class="m-bottom ovf-h ui-border-t order-con-item-bottom">
+                        	<span>共<span class="c-purple num-goods num-goods">10</span>件商品</span>
+						<a href="javascript:;" class="z-focus btn b-middle my-order-all-pay f-fr">去付款</a>
+					</div>
+				</div>
+				<div class="m-list m-list2" order_id="{$order[$i]['id']}" >
+					<div class="m-title ui-border-b">
+						<span class="t-ma c-333">单号：1234567890123456</span> 
+						<!-- TODO 判断订单状态 -->
+						<span class="f-fr c-purple order-all-type">交易成功</span> 
+						<!-- END结束判断 -->
+					</div>
+					<!-- START多件商品展示 -->
+					<div class="mui-slider order-item-pics my-order-dsh-info">
+					    <a href="javascript:;" class=" mui-slider-indicator mui-segmented-control mui-segmented-control-inverted order-item-control">
+					    		<!-- 循环商品图片 -->
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					        <span class="order-control-item ">
+					        		<i class="order-drop-pic">
+					        			<img src="../../img/jrbd1.png">
+					        		</i>
+					        </span>
+					    </a>
+					</div>
+					<!-- END多件商品展示 -->
+					<div class="m-bottom ovf-h ui-border-t order-con-item-bottom">
+                        	<span>共<span class="c-purple num-goods num-goods">10</span>件商品</span>
+						<a href="javascript:;" class="z-focus btn b-middle my-order-all-pay f-fr">去付款</a>
+					</div>
+				</div>
+				<!-- END示例数据 -->
+				
+            </div>
+        </div>
+    </main>
+    <script src="../../js/mui3.5.min.js"></script>
+    <script src="../../js/zepto.min.js"></script>
+    <!-- <script src="{url:#js/common.js}"></script> -->
+    <script src="../../js/my_order_all.js"></script>
+
+
+</body>
+
+</html>

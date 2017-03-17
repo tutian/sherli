@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>个人中心</title>
+    <link href="../../css/mui3.5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/app.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css" />
+</head>
+
+<body>
+    <nav class="mui-bar mui-bar-tab home-bar">
+        <a href="javascript:;" class="mui-tab-item home">
+            <span class="mui-icon iconfont icon-c-shouye"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a href="javascript:;" class="mui-tab-item">
+            <span class="mui-icon icon-c-fenlei iconfont"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <!--<div >-->
+        <a href="javascript:;" class="mui-tab-item shopcart">
+            <span class="mui-icon iconfont icon-c-gouwuche"><span class="mui-badge"></span></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <!--</div>-->
+        <a href="javascript:;" class="mui-tab-item mui-active">
+            <span class="mui-icon iconfont icon-c-wode-copy"></span>
+            <span class="mui-tab-label">我的</span>
+        </a>
+    </nav>
+    <div class="mui-scroll-wrapper my-show-scroll-wrapper">
+        <div class="mui-scroll">
+            <header class="my-head wechat-head">
+                <div class="my-pic" style="background-image: url(../../img/jrbd1.png);"></div>
+                <p class="ta-c">张三李四王二麻子</p>
+                <a data-url="{url:/index/my_account_details}" class="my-account-details">
+                    <span>
+                    <i class="iconfont icon-daipingjia"></i>
+                    <i class="text">编辑资料</i>
+                </span>
+                </a>
+            </header>
+            <main class="my-main">
+                <div class="my-order">
+                    <h4 class="my-order-head">
+						<span class="iconfont my-order-icon icon-dingdan1 dingdan1"></span>我的订单
+							<!--<a data-url="javascript:;" class="my-all-order fr">
+								全部订单<span class="mui-icon mui-icon-arrowright my-more"></span>
+							</a>-->
+					</h4>
+					<ul class="mui-table-view mui-grid-view mui-grid-9 my-order-main">
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 my-order-item my-order-dfk">
+							<a data-url="javascript:;">
+								<span class="mui-icon iconfont icon-dingdan1 dingdan1 my-icon-item"></span>
+                                <div class="mui-media-body">全部订单</div>
+                            </a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 my-order-item my-order-dfk">
+							<a data-url="javascript:;">
+								<span class="mui-icon iconfont icon-daifukuan1 daifukuan1 my-icon-item">
+									<!-- 判断是否有待付款订单 -->
+									<span class="mui-badge" style="display: block;">10</span>
+									<!-- END结束判断 -->
+								</span>
+                                <div class="mui-media-body">待付款</div>
+                            </a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 my-order-item my-order-dsh">
+							<a data-url="javascript:;">
+								<span class="mui-icon iconfont icon-huoche">
+									<!-- 判断是否有待收货订单 -->
+	                                	<span class="mui-badge" style="display: block;">10</span>
+	                                	<!-- END结束判断 -->
+								</span>
+                                <div class="mui-media-body" style="margin-top: 4px;">待收货</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="mui-table-view my-info">
+                		<!-- 特殊权限开启 -->
+                    <!--<li class="mui-table-view-cell my-info-item my-jiazu">
+                        <a data-url="{url:/index/my_jiazu/mall_type/$mall_type}" class="mui-navigate-right my-info-link">
+                            <span class="iconfont icon-qun qun"></span> 我的家族
+                        </a>
+                    </li>-->
+                    <!-- 特殊权限开启 -->
+                    <li class="mui-table-view-cell my-info-item my-jiazu">
+                        <a href="javascript:;" class="mui-navigate-right my-info-link">
+                            <span class="iconfont icon-wallet wallet my-wallet-icon"></span> 我的钱包
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell my-info-item my-dizhi">
+                        <a href="{url:/index/my_address/mall_type/$mall_type}" class="mui-navigate-right my-info-link my-address">
+                            <span class="iconfont icon-dizhi dizhi"></span> 收货地址
+                        </a>
+                    </li>
+                    <!--<li class="mui-table-view-cell my-info-item my-shoucan">
+                        <a data-url="{url:/index/my_shoucan/mall_type/$mall_type}" class="mui-navigate-right my-info-link">
+                            <span class="iconfont icon-star star my-info-icon"></span> 我的收藏
+                        </a>
+                    </li>-->
+                    <!--<li class="mui-table-view-cell my-info-item my-zhuanshu">
+                        <a data-url="{url:/user/my_zhuanshu_code/shareid/$userid/mall_type/$mall_type}" class="mui-navigate-right my-info-link">
+                            <span class="iconfont icon-erweima erweima"></span> 专属二维码
+                        </a>
+                    </li>-->
+                </ul>
+                <ul class="mui-table-view my-about">
+                    <li class="mui-table-view-cell my-info-item my-custom-item">
+                        <a data-url="tel:4006191006" class="mui-navigate-right my-info-link phone-call-btn">
+                            <span class="iconfont icon-kefu kefu"></span> 客户服务 <span class="my-num fr">400-619-1006</span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell my-info-item about-us">
+                        <a href="javascript:;" class="mui-navigate-right my-info-link">
+                            <span class="iconfont icon-diqiu my-info-icon my-about-us"></span> 关于我们
+                        </a>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        </div>
+        <script src="../../js/mui3.5.min.js"></script>
+        <script src="../../js/zepto.min.js"></script>
+        <script src="../../js/common.js"></script>
+		<script type="text/javascript">
+			mui('.my-show-scroll-wrapper').scroll(mui.scrollOption);
+		</script>
+</body>
+</html>

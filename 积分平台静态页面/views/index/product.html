@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="misapplication-tap-highlight" content="no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <title>商品详情</title>
+    <link rel="stylesheet" type="text/css" href="../../css/mui3.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/app.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/goodsinfo.css" />
+    <style>
+     .mui-content{
+	    position: absolute;
+	    top: 0px;
+	    width: 100%;
+	    height: 100%;
+	    overflow-y: auto;
+    }
+    .no-stock {
+        color: #cdc8c8 !important;
+    }
+    
+    .order-sure-original {
+        background-color: #a269c7;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+    }
+    
+    .goodsinfo-btn-box .active {
+        background-color: #cdc8c8;
+    }
+    
+    .order-sure-original:active {
+        color: #fff;
+    }
+    
+    .goods_details_home {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #999;
+        opacity: 0.5;
+        color: #fff;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        z-index: 9;
+    }
+    .goodsinfo-pingjia, .goodsinfo-param, .goodsinfo-pic{
+    	padding-bottom: 50px!important;
+    }
+    .mui-slider-indicator{
+    	position: relative;top: -28px;
+    }
+    </style>
+		<body>
+			<!-- <div class="mui-content goodsinfo-main mui-scroll-wrapper goodsinfo-scroll-wrapper"> -->
+				<div class="mui-content">
+					<!--banner-->
+					<div class="mui-slider goodsinfo-slider">
+						<div class="mui-slider-group goodsinfo-banner">
+							<div class="mui-slider-item goodsinfo-item">
+								<a href="javascript:;" class="goodsinfo-img-box"><img src="../../img/jrbd1.png"></a>
+							</div>
+							<div class="mui-slider-item goodsinfo-item">
+								<a href="javascript:;" class="goodsinfo-img-box"><img src="../../img/jrbd1.png"></a>
+							</div>
+							<div class="mui-slider-item goodsinfo-item">
+								<a href="javascript:;" class="goodsinfo-img-box"><img src="../../img/jrbd1.png"></a>
+							</div>
+						</div>
+						<div class="mui-slider-indicator goodsinfo-slider-indicator">
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+					<!--商品信息-->
+					<div class="goodsinfo-thumb">
+						<p class="goodsinfo-goodsname">【2支】 美国 艾维诺/Aveeno Baby 婴儿天然燕麦舒缓润肤霜保湿霜 141g/支</p>
+						<p class="goodsinfo-tags">
+							<span class="goodsinfo-free">包邮</span>
+							<span class="goodsinfo-free">测试</span>
+						</p>
+						<div class="goodsinfo-price-item">
+							<div class="goodsinfo-price-right mui-pull-right goodinfo-shoucan">
+								<span class="mui-icon iconfont goodsinfo-collect-icon icon-shoucang"></span>
+								<p class="goodsinfo-collect-disc">收藏</p>
+							</div>
+							<div class="goodsinfo-price-left">
+								<p class="goodsinfo-current-price"><i class="goodsinfo-sell-price">¥666.66</i></p>
+								<p class="goodsinfo-market-price">市场价：<span class="goodsinf-market-num">¥999.99</span></p>
+							</div>
+						</div>
+					</div>
+					<a href="#goodsinfo" class="goodsinfo-select">
+			            <span class="goodsinfo-select-cont">请选择:</span>
+			            <span class="mui-icon mui-icon-arrowright mui-pull-right goodsinfo-select-icon"></span>
+					</a>
+					<div class="goodsinfo-tab" id="goodsinfoTab">
+						<a class="mui-control-item goodsinfo-control-item" href="#goodsinfoPic">
+							<span class="active">图文详情</span>
+						</a>
+						<a class="mui-control-item goodsinfo-control-item goodsinfo-left-line" href="#goodsinfoParam" id="paramTab">
+							<span>规格参数</span>
+						</a>
+					</div>
+		            <div id="goodsinfoPic" class="mui-slider-item mui-control-content goodsinfo-control-content mui-active ">
+						<div class="goodsinfo-pic-box goodsinfo-pic">
+							<img src="../../img/xq.jpg"/>
+						</div>
+		                <div class="not-pic goodsinfo-pic" style="display: none;">
+							<a href="javascript:;" class="pingjia-icon">
+								<span class="pingjia-icon-box">
+		                            <span class="mui-icon  mui-icon-chat "></span>
+								</span>
+							</a>
+							<p class="not-pingjia-disc">暂无图文详情</p>
+						</div>
+					</div>
+		            <div id="goodsinfoParam" class="mui-slider-item mui-control-content goodsinfo-control-content ">
+		                <ul class="mui-table-view goodsinfo-table-view goodsinfo-param">
+							<li class="mui-table-view-cell goodsinfo-table-view-cell">
+								<span class="goods-param-title">尺寸</span>：
+								<span class="goods-param-name">9999</span>
+							</li>
+							<li class="mui-table-view-cell goodsinfo-table-view-cell">
+								<span class="goods-param-title">尺寸</span>：
+								<span class="goods-param-name">9999</span>
+							</li>
+							<li class="mui-table-view-cell goodsinfo-table-view-cell">
+								<span class="goods-param-title">尺寸</span>：
+								<span class="goods-param-name">9999</span>
+							</li>
+							<li class="mui-table-view-cell goodsinfo-table-view-cell">
+								<span class="goods-param-title">尺寸</span>：
+								<span class="goods-param-name">9999</span>
+							</li>
+						</ul>
+		                <div class="not-param goodsinfo-param" style="display: none;">
+							<a href="javascript:;" class="pingjia-icon">
+								<span class="pingjia-icon-box">
+									<span class="mui-icon  mui-icon-chat "></span>
+								</span>
+							</a>
+							<p class="not-pingjia-disc">暂无参数</p>
+						</div>
+					</div>
+				<!-- </div> -->
+				</div>
+				<footer class="mui-bar mui-bar-tab goodsinfo-footer">
+					<div class=" goodsinfo-shopcart">
+	                <a href="{url:/index/shop_cart/mall_type/$goods[mall_type]}" style="display: block;width: 100%;height: 100%;text-align: center;padding-top:5px;">
+	                    <span class="mui-icon iconfont icon-gouwuche-copy"><span class="mui-badge" >99</span></span>
+	                    <span class="mui-tab-label">购物车</span>
+	                </a>
+	            </div>
+					<div class="goodsinfo-btn-box">
+						<a href="#goodsinfo" class="goodsinfo-shopcart-btn goodsinfo-add-shopcart">加入购物车</a>
+					</div>
+					<div class="goodsinfo-btn-box">
+						<a href="#goodsinfo" class="goodsinfo-shopcart-btn goodsinfo-rush-buy active">立即购买</a>
+					</div>
+				</footer>
+
+			<div  id="goodsinfo" class="mui-popover mui-popover-action mui-popover-bottom  goodsinfo-cart-main">
+				<div class="goodsinfo-goods">
+					<div class="goods-left mui-pull-left">
+						<i class="goods-pic"><img src="../../img/jrbd1.png"></i>
+					</div>
+					<a href="#goodsinfo" class="mui-icon iconfont icon-x2 goods-right mui-pull-right"></a>
+					<div class="goods-center">
+						<p class="goods-name">测试商品测试商品测试商品测试商品测试商品测试商品测试商品</p>
+						<p class="goods-price">666.66</p>
+						<p class="goods-lib">即时库存：<span id="store_nums"></span></p>
+					</div>
+				</div>
+				<div class="goods-spec-item">
+					<div class="goods-size goodsinfo-cart-item">
+						<div class="goods-size-item">
+							<h4 class="goods-size-title">颜色</h4>
+							<p class="goods-size-disc">
+								<span class="goods-size-list" data-value="2:12">灰色</span>
+								<span class="goods-size-list" data-value="2:16">黑色</span>
+								<span class="goods-size-list" data-value="2:10">白色</span>
+								<span class="goods-size-list" data-value="2:14">蓝色</span>
+							</p>
+						</div>
+						<div class="goods-size-item">
+							<h4 class="goods-size-title">尺寸</h4>
+							<p class="goods-size-disc">
+								<span class="goods-size-list" data-value="6:43">S</span>
+								<span class="goods-size-list" data-value="6:46">L</span>
+								<span class="goods-size-list" data-value="6:47">XL</span>
+								<span class="goods-size-list" data-value="6:48">XXL</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="goods-num goodsinfo-cart-item">
+					<div class="goods-num-title mui-pull-left">购买数量</div>
+					<div class="mui-numbox mui-pull-right" id="numbox" data-numbox-min="1" style="width: 124px;height: 35px;">
+						<button class="mui-btn-numbox-minus mui-btn-item" type="button">-</button>
+						<input class="mui-input-numbox" type="number" disabled="" id="goodsinfoInputNumbox" value="1" style="color:#000;">
+						<button class="mui-btn-numbox-plus mui-btn-item" type="button">+</button>
+					</div>
+				</div>
+				<div class="goodsinfo-cart-footer">
+					<div class="goodsinfo-btn-box">
+						<a href="javascript:;" class="goodsinfo-cart-btn goodsinfo-add-cart">加入购物车</a>
+					</div>
+					<div class="goodsinfo-btn-box">
+						<a href="javascript:;" class="goodsinfo-cart-btn goodsinfo-current-buy order-sure-original active">立即购买</a>
+					</div>
+				</div>
+				<div class="y-btn-buygoods" style="display:none;">
+					<div class="goodsinfo-btn-box">
+						<a href="javascript:;" class="goodsinfo-cart-btn goodsinfo-current-buy order-sure-original btn z-focus " >确定</a>
+					</div>
+				</div>
+				
+			</div>
+			<!-- <div id="goodsinfoshopcart" class="mui-backdrop goodsinfo-cart-mask">
+			</div> -->
+			<a class="mui-action-back mui-icon mui-icon-back goodsinfo-back"></a>
+        <a href="/index.php?con=index&act=index&mall_type=oversea" class="mui-icon iconfont icon-c-shouye goods_details_home"></a>
+		</body>
+		<script src="../../js/mui3.5.min.js"></script>
+		<script src="../../js/mui/zepto.min.js"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/product.js"></script>
+		<script>
+			var goods_id = '';
+			var skuMap = {";2:12;6:43;":{"sell_price":"49.00","market_price":"198.00","store_nums":"20","specs_key":";2:12;6:43;","pro_no":"NS20140504123_1","id":"47","discount_price":"44.40"},";2:12;6:46;":{"sell_price":"50.00","market_price":"199.00","store_nums":"12","specs_key":";2:12;6:46;","pro_no":"NS20140504123_2","id":"48","discount_price":"44.40"},";2:12;6:47;":{"sell_price":"51.00","market_price":"201.00","store_nums":"4","specs_key":";2:12;6:47;","pro_no":"NS20140504123_3","id":"49","discount_price":"44.40"},";2:12;6:48;":{"sell_price":"52.00","market_price":"202.00","store_nums":"20","specs_key":";2:12;6:48;","pro_no":"NS20140504123_4","id":"50","discount_price":"44.40"},";2:16;6:43;":{"sell_price":"53.00","market_price":"203.00","store_nums":"20","specs_key":";2:16;6:43;","pro_no":"NS20140504123_5","id":"51","discount_price":"44.40"},";2:16;6:46;":{"sell_price":"54.00","market_price":"204.00","store_nums":"20","specs_key":";2:16;6:46;","pro_no":"NS20140504123_6","id":"52","discount_price":"44.40"},";2:16;6:47;":{"sell_price":"55.00","market_price":"205.00","store_nums":"20","specs_key":";2:16;6:47;","pro_no":"NS20140504123_7","id":"53","discount_price":"44.40"},";2:16;6:48;":{"sell_price":"56.00","market_price":"206.00","store_nums":"20","specs_key":";2:16;6:48;","pro_no":"NS20140504123_8","id":"54","discount_price":"44.40"},";2:10;6:43;":{"sell_price":"57.00","market_price":"207.00","store_nums":"20","specs_key":";2:10;6:43;","pro_no":"NS20140504123_9","id":"55","discount_price":"44.40"},";2:10;6:46;":{"sell_price":"58.00","market_price":"208.00","store_nums":"20","specs_key":";2:10;6:46;","pro_no":"NS20140504123_10","id":"56","discount_price":"44.40"},";2:10;6:47;":{"sell_price":"59.00","market_price":"209.00","store_nums":"20","specs_key":";2:10;6:47;","pro_no":"NS20140504123_11","id":"57","discount_price":"44.40"},";2:10;6:48;":{"sell_price":"60.00","market_price":"210.00","store_nums":"20","specs_key":";2:10;6:48;","pro_no":"NS20140504123_12","id":"58","discount_price":"44.40"},";2:14;6:43;":{"sell_price":"61.00","market_price":"211.00","store_nums":"20","specs_key":";2:14;6:43;","pro_no":"NS20140504123_13","id":"59","discount_price":"44.40"},";2:14;6:46;":{"sell_price":"62.00","market_price":"212.00","store_nums":"20","specs_key":";2:14;6:46;","pro_no":"NS20140504123_14","id":"60","discount_price":"44.40"},";2:14;6:47;":{"sell_price":"63.00","market_price":"213.00","store_nums":"20","specs_key":";2:14;6:47;","pro_no":"NS20140504123_15","id":"61","discount_price":"44.40"},";2:14;6:48;":{"sell_price":"64.00","market_price":"214.00","store_nums":"0","specs_key":";2:14;6:48;","pro_no":"NS20140504123_16","id":"62","discount_price":"44.40"}};
+		</script>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>订单确认 </title>
+    <link rel="stylesheet" type="text/css" href="../../css/mui3.5.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/app.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/index.css"/>
+</head>
+
+<body>
+    <div class="wrap orderdetails wait-delivery-goods order-sure-original">
+        <div class="header">
+            <div class="m-h3 ps-f">
+				<h1 class="ui-border-b">
+					<a class="mui-action-back iconfont icon-jiantou1 mui-pull-left header-back"></a>
+					订单确认
+				</h1>
+            </div>
+        </div>
+        <div class="content mui-scroll-wrapper order-sure-wrapper">
+            <div class="mui-scroll" style="transform: translate3d(0px, 0px, 0px) translateZ(0px); transition-duration: 0ms;">
+            		<!-- 无收货地址 -->
+                <a href="javascript:" class="m-mod1 m-mod order-sure-add-address" style="display: none;">
+                    <div class="m-text">
+                        <span class="i-add"><i class="mui-icon mui-icon-plusempty"></i></span>
+                        <span class="c-purple">添加收货人地址</span>
+                    </div>
+                    <i class="mui-icon mui-icon-arrowright"></i>
+                </a>
+                <!-- END无收货地址 -->
+                <!-- 有收货地址 -->
+                <a href="javascript:" class="order-info-my-address m-mod m-mod2 order-changge-address" data-address-id="{$addr_id}" style="display: block;" >
+                    <div class="m-msg">
+                        <span class="iconfont icon-yonghu-copy weibiaoti101 "></span>
+                        <i class="name">张三</i>
+                        <i class="p-num f-fr order-info-phone">18888888888</i>
+                        <span class="iconfont icon-shouji f-fr "></span>
+                    </div>
+                    <div class="m-address">
+                        <i class="iconfont icon-dizhi"></i>
+                        <span class="order-info-address-disc mui-ellipsis">XXsasdXXXXXXXXXXXXXXXXXXXXXXX</span>
+                    </div>
+                    <i class="mui-icon mui-icon-arrowright"></i>
+                    <input type="hidden" id="address_id" value="1" />
+                </a>
+                <!-- END有收货地址 -->
+                <div class="m-mod m-mod6">
+                    <div class="title c-333 ui-border-b order-info-title"><span class="iconfont icon-oversea oversea i-class-guan"></span><span>商品列表</span></div>
+                    <input type="hidden" id="goods" value="1,2,3,4" />
+                    <ul class="m-goods-details">
+	                    <!-- 循环商品 -->
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                     <!-- END循环商品 -->
+	                     <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="ui-border-b">
+	                        <div class="m-img">
+	                            <img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+	                        </div>
+	                        <div class="m-details">
+	                            <div class="list list1 ovf-h">
+	                                <div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品</div>
+	                                <div class="f-fr">
+	                                <div class="goods-price-num">666.66</div>
+	                                </div>
+	                            </div>
+	                            <p>
+	                            <span class="guess-post">尺寸：1.5M*2M</span>
+	                            <span class="guess-post">颜色：红色</span>
+	                            </p>
+	                            <div class="list list3 ovf-h">
+	                            		<i class="f-fl goods-spec-size"></i>
+	                            		<span class="f-fr c-666">X<span class="y-buy-goods-num">5</span></span>
+	                            </div>
+	                        </div>
+	                    </li>
+                    </ul>
+                </div>
+
+                <div class="m-mod m-mod8 ">
+					<ul class="order-info-cash">
+						<li>商品总金额<span class="order-info-total-num ">¥666.66</span></li>
+						<li>运费<span class="order-info-tans-num ">+¥0</span></li>
+					</ul>
+                </div>
+            </div>
+        
+        <div class="m-submit ovf-h ">
+            <span class="c-333 f-fl">实付金额：</span>
+            <i class="c-purple f-fl order-info-cash-num ">¥666.66</i>
+            <a href="javascript:;" id="confirm" class="btn z-focus f-fr order-sure-pay-btn">提交订单</a>
+        </div>
+    </div>
+   	<script src="../../js/mui3.5.min.js"></script>
+   	<script src="../../js/zepto.min.js"></script>
+    <script src="../../js/common.js"></script>
+   	<script src="../../js/goods_order.js"></script>
+</body>
+
+</html>

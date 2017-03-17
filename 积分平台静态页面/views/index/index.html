@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>芝麻集</title>
+	<link rel="stylesheet" href="../../css/mui3.5.min.css" />
+	<link rel="stylesheet" href="../../css/comm.css" />
+    <link rel="stylesheet" href="../../css/index/index.css" />
+	<link rel="stylesheet" href="../../fonts/iconfont.css" />
+	<style >
+		.exchange-heart .daily-goods-name.goods-name{
+			padding: 0 4%;
+		}
+		.today-exchange-goods li{
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="ui-index-scrollbar">
+		<div class="ui-containe ui-index-search home-search" style="height: 53px; padding-top:10px;">
+			<div class="ui-row ui-text-white mui-text-center" >
+				<div class="ui-col-20" style="width:20%;"><span class="ui-text-weight ui-text-white ui-text-line span-guan-logo"><img class="i-guan-logo" src="../../images/index/zhimaji.png"></span></div>
+				<div class="ui-col-60 mui-radio" style="width:60%;">
+					<i class="icon iconfont icon-sousuo ui-icon-search"></i>
+					<input type="button" class="ui-search-input mui-text-left ui-seaech-pad-left" onclick="javascript:location.href='{url:/index/goods_list_seasame/mall_type/seasame}'" value="搜索锦绣商品" >
+				</div>
+				<a href="javascript:" class="ui-col-10" style="margin-top:7px;">
+					<span class="ui-margin-top-smlinte ui-text-line"><i class="icon iconfont icon-c-wode-copy"></i></span>
+				</a>
+				<a href="javascript:" class="ui-col-10 shop_cart_link" style="margin-top:7px;"><span class="ui-margin-top-smlinte ui-text-line"><i class="icon iconfont icon-c-gouwuche"></i></span></a>
+			</div>
+		</div>
+	</div>
+	<div id="ui-search-scroll" class="ui-index-body mui-content y-wrap-seasame">
+		<div id="slider" class="mui-slider jx-silder" >
+		  <div class="mui-slider-group mui-slider-loop">
+		  		<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			    <div class="mui-slider-item">
+			      <a href="javascript:">
+			        <img src="../../img/banner01.jpg">
+			      </a>
+			    </div>
+	            <!-- 第一张 -->
+			    <div class="mui-slider-item">
+			      <a href="javascript:">
+			        <img src="../../img/banner01.jpg">
+			      </a>
+			    </div>
+			    <div class="mui-slider-item">
+			      <a href="javascript:">
+			        <img src="../../img/banner02.jpg">
+			      </a>
+			    </div>
+	            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			    <div class="mui-slider-item">
+			      <a href="javascript:">
+			        <img src="../../img/banner01.jpg">
+			      </a>
+			    </div>
+		  </div>
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+		<!--玩转芝麻-->
+		<ul class="home-make-zhima mui-table-view mui-grid-view mui-grid-9 home-guan">
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;" class="home-icon-box">
+	                <i class="iconfont icon-zmb01"></i>
+	                <span>芝麻</span>
+	                <i class="seasame-num">999.00个</i>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a class="home-icon-box">
+	                <i class="iconfont icon-iconfontwzzm"></i>
+	                <span>玩赚芝麻</span>
+	            </a>
+	        </li>
+	    </ul>
+	    <div class="ui-badge-white home-nav">
+		<div class=" m-home-nav">
+			<div class=" m-home-list">
+				<a class="ui-a-block mui-text-center" href="javascript:">
+					<p class="img-home-nav"><img class="" src="../../images/index/i-china.png"></p>
+					<p class="text-home-nav">中国馆</p>
+				</a>
+			</div>
+			<div class="m-home-list">
+				<a class="ui-a-block mui-text-center" href="javascript:">
+					<p class="img-home-nav"><img class="" src="../../images/index/i-jinxiu.png"></p>
+					<p class="text-home-nav">锦绣馆</p>
+				</a>
+			</div>
+			<div class="m-home-list">
+				<a class="ui-a-block mui-text-center" href="javascript:">
+					<p class="img-home-nav"><img class="" src="../../images/index/i-oversea.png"></p>
+					<p class="text-home-nav">海外馆</p>
+				</a>
+			</div>
+			<div class="m-home-list">
+				<a class="ui-a-block mui-text-center" href="javascript:">
+					<p class="img-home-nav"><img class="" src="../../images/index/i-class.png"></p>
+					<p class="text-home-nav">分类</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	    <!--随心兑-->
+	    <div class="exchange-heart ui-badge-white">
+	    	<div class="m-title ta-c">
+	    		随心兑
+	    		<span class="icon iconfont icon-jiantou jiantou"></span>
+	    	</div>
+	    	<ul class="exchange-heart-goods">
+    			<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<div class="exchange-heart-img">
+	    					<img class="ui-imageviewer" src="../../img/ydhw4.jpg">
+	    				</div>
+	    				<div class="exchange-heart-price">
+	    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXX</div>
+	    					<span class="iconfont icon-zmb01"></span>
+	    					<span class="exchange-heart-price-num">￥99.99</span>
+	    				</div>
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<div class="exchange-heart-img">
+	    					<img class="ui-imageviewer" src="../../img/ydhw4.jpg">
+	    				</div>
+	    				<div class="exchange-heart-price">
+	    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXX</div>
+	    					<span class="iconfont icon-zmb01"></span>
+	    					<span class="exchange-heart-price-num">￥99.99</span>
+	    				</div>
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<div class="exchange-heart-img">
+	    					<img class="ui-imageviewer" src="../../img/ydhw4.jpg">
+	    				</div>
+	    				<div class="exchange-heart-price">
+	    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXX</div>
+	    					<span class="iconfont icon-zmb01"></span>
+	    					<span class="exchange-heart-price-num">￥99.99</span>
+	    				</div>
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<div class="exchange-heart-img">
+	    					<img class="ui-imageviewer" src="../../img/ydhw4.jpg">
+	    				</div>
+	    				<div class="exchange-heart-price">
+	    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXX</div>
+	    					<span class="iconfont icon-zmb01"></span>
+	    					<span class="exchange-heart-price-num">￥99.99</span>
+	    				</div>
+	    			</a>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <!--热门品牌-->
+	    <div class="hot-brand ui-badge-white">
+	    	<div class="m-title ta-c">
+	    		热门品牌
+	    	</div>
+	    	<ul class="hot-brand-detail">
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a class="ui-a-block mui-text-center" href="javascript:">
+	    				<img class="ui-imageviewer" src="../../img/flp.jpg">
+	    			</a>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <!--分类阶梯-->
+		    <div class="exchange-heart daily-goods">
+			    	<div class="m-title ta-c">
+		    		测试分类1
+			    	</div>
+			    	<ul class="exchange-heart-goods">
+			    		<li>
+			    			<a class="ui-a-block mui-text-center" href="javascript:">
+			    				<div class="exchange-heart-img">
+			    					<img class="ui-imageviewer" src="../../img/jrbd1.png">
+			    				</div>
+			    				<div class="exchange-heart-price">
+			    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXXXXXXXXXXXXXXXX</div>
+			    					<span class="iconfont icon-zmb01"></span>
+			    					<span class="exchange-heart-price-num">￥99.99</span>
+			    				</div>
+			    			</a>
+			    		</li>
+			    		<li>
+			    			<a class="ui-a-block mui-text-center" href="javascript:">
+			    				<div class="exchange-heart-img">
+			    					<img class="ui-imageviewer" src="../../img/jrbd1.png">
+			    				</div>
+			    				<div class="exchange-heart-price">
+			    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXXXXXXXXXXXXXXXX</div>
+			    					<span class="iconfont icon-zmb01"></span>
+			    					<span class="exchange-heart-price-num">￥99.99</span>
+			    				</div>
+			    			</a>
+			    		</li>
+			    		<li>
+			    			<a class="ui-a-block mui-text-center" href="javascript:">
+			    				<div class="exchange-heart-img">
+			    					<img class="ui-imageviewer" src="../../img/jrbd1.png">
+			    				</div>
+			    				<div class="exchange-heart-price">
+			    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXXXXXXXXXXXXXXXX</div>
+			    					<span class="iconfont icon-zmb01"></span>
+			    					<span class="exchange-heart-price-num">￥99.99</span>
+			    				</div>
+			    			</a>
+			    		</li>
+			    		<li class="last-child">
+			    			<a class="ui-a-block mui-text-center" href="javascript:">
+			    				<div class="exchange-heart-img">
+			    					<img class="ui-imageviewer" src="../../images/index/i-kong.png">
+			    				</div>
+			    				<div class="exchange-heart-price">
+			    					<div class="daily-goods-name t-ovf goods-name">中华毛巾</div>
+			    					<span class="iconfont icon-zmb01"></span>
+			    					<span class="exchange-heart-price-num">39</span>
+			    				</div>
+			    				<div class="m-more">
+			    					<div class="t-text">更多测试分类</div>
+			    					<img class="ui-imageviewer" src="../../images/index/i-arrow-r.png">
+			    					
+			    				</div>
+			    			</a>
+			    		</li>
+			    	</ul>
+		    </div>
+		    <div class="exchange-heart daily-goods">
+			    	<div class="m-title ta-c">
+		    		测试分类2
+			    	</div>
+			    	<ul class="exchange-heart-goods">
+			    		<li>
+			    			<a class="ui-a-block mui-text-center" href="javascript:">
+			    				<div class="exchange-heart-img">
+			    					<img class="ui-imageviewer" src="../../img/jrbd1.png">
+			    				</div>
+			    				<div class="exchange-heart-price">
+			    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXXXXXXXXXXXXXXXX</div>
+			    					<span class="iconfont icon-zmb01"></span>
+			    					<span class="exchange-heart-price-num">￥99.99</span>
+			    				</div>
+			    			</a>
+			    		</li>
+			    		<li>
+			    			<a class="ui-a-block mui-text-center" href="javascript:">
+			    				<div class="exchange-heart-img">
+			    					<img class="ui-imageviewer" src="../../img/jrbd1.png">
+			    				</div>
+			    				<div class="exchange-heart-price">
+			    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXXXXXXXXXXXXXXXX</div>
+			    					<span class="iconfont icon-zmb01"></span>
+			    					<span class="exchange-heart-price-num">￥99.99</span>
+			    				</div>
+			    			</a>
+			    		</li>
+			    		<li>
+			    			<a class="ui-a-block mui-text-center" href="javascript:">
+			    				<div class="exchange-heart-img">
+			    					<img class="ui-imageviewer" src="../../img/jrbd1.png">
+			    				</div>
+			    				<div class="exchange-heart-price">
+			    					<div class="daily-goods-name t-ovf goods-name">测试商品XXXXXXXXXXXXXXXXXXXXXX</div>
+			    					<span class="iconfont icon-zmb01"></span>
+			    					<span class="exchange-heart-price-num">￥99.99</span>
+			    				</div>
+			    			</a>
+			    		</li>
+			    		<li class="last-child">
+			    			<a class="ui-a-block mui-text-center" href="javascript:">
+			    				<div class="exchange-heart-img">
+			    					<img class="ui-imageviewer" src="../../images/index/i-kong.png">
+			    				</div>
+			    				<div class="exchange-heart-price">
+			    					<div class="daily-goods-name t-ovf goods-name">中华毛巾</div>
+			    					<span class="iconfont icon-zmb01"></span>
+			    					<span class="exchange-heart-price-num">39</span>
+			    				</div>
+			    				<div class="m-more">
+			    					<div class="t-text">更多测试分类</div>
+			    					<img class="ui-imageviewer" src="../../images/index/i-arrow-r.png">
+			    					
+			    				</div>
+			    			</a>
+			    		</li>
+			    	</ul>
+		    </div>
+	</div>
+<script type="text/javascript">
+var BASE_IMAGE_URL = "{url:#images}";
+</script>
+<script type="text/javascript" src="../../js/zepto.min.js" ></script>
+<script type="text/javascript" src="../../js/mui3.5.min.js" ></script>
+<script type="text/javascript" src="../../js/index/index.js" ></script>
+</body>
+</html>

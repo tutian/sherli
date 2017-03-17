@@ -1,0 +1,193 @@
+html, body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, img {
+  margin: 0;
+  padding: 0;
+}
+li{list-style-type: none;}
+body{
+	background-color: #f2f2f2;
+	font-size: 14px;
+	}
+a:hover,a:active{color: #4b4e4e;}
+::-webkit-scrollbar{width:0;}
+.ui-ioconimageviewer{width: 80%;}
+.ui-icon-search{position: absolute; top: 18%; left: 5%; z-index: 9999; color: #000;}
+input.ui-seaech-pad-left{padding-left: 15%;}
+/*顶部*/
+.ui-index-header{background: #333; height: 60px;}
+/*固定顶部*/
+.ui-index-scrollbar{position: fixed; width: 100%; height: auto; z-index: 9999;}
+
+/*主题区域*/
+.ui-index-body{position: absolute; top:0; width: 100%; height: 100%; overflow-y: auto;}
+/**/
+.ui-flexible{min-height: 32vh;}
+.ui-flexible .mui-tab-item{display: table-cell; overflow: hidden; width: 1%; text-align: center; vertical-align: middle; white-space: nowrap; text-overflow: ellipsis;}
+.ui-flexible .mui-tab-label{
+	display: block; 
+	max-width: 95%;	
+	font-size: 12px; text-overflow: ellipsis;
+	white-space: nowrap;
+	
+	}
+.ui-flexible .mui-col-xs-4{float: none; width: 38vw; display: inline-block;}
+@media screen and (max-device-width: 320px){.ui-flexible{min-height: 40vh;}}
+
+/*热门*/
+.ui-autorow{display: -webkit-flex; width: 100%; -webkit-justify-content: center}
+.ui-index-rimen{width: 20%; height: 10px; border-bottom: 1px solid #303536;}
+.ui-index-rimen-title{position: absolute; top: 0;width: 100%; z-index: 9999; text-overflow: ellipsis;}
+.home-make-zhima {
+  height: 44px;
+}
+.home-make-zhima.mui-grid-view.mui-grid-9{background-color: #fff;}
+.home-make-zhima .mui-media {
+  padding: 0 !important;
+  height: 100%;
+}
+.home-make-zhima .mui-table-view-cell > a:not(.mui-btn) {
+  padding: 0;
+}
+.home-make-zhima li {
+  width: 49.9%;
+  font-size: 14px;
+  border-right: 1px solid rgba(238, 238, 238, 0.8);
+}
+.home-make-zhima li:last-child {
+  border-right: none !important;
+}
+.home-make-zhima i {
+  color: #02c091;
+}
+.home-make-zhima span {
+  color: #333;
+}
+.home-make-zhima .icon-zmb01 {
+  margin-top: 10px;
+  font-size: 19px;
+}
+.home-make-zhima .icon-iconfontwzzm {
+  font-size: 24px;
+}
+.y-wrap-seasame .m-title{
+	overflow: hidden;
+	height: 50px;
+	line-height: 50px;
+	font-size: 17px;
+	color: #333;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(238, 238, 238, 0.8);
+}
+.y-wrap-seasame .daily-goods .m-title{background-color: #efeff4;}
+.y-wrap-seasame .m-title .jiantou{
+	font-size: 14px;
+}
+/*随心兑*/
+.exchange-heart{
+	margin-top: 10px;
+}
+.exchange-heart-goods,.today-exchange-goods{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.exchange-heart-goods li{
+	float: left;
+	width: 50%;
+	padding-bottom: 15px;
+}
+.exchange-heart-goods .mui-text-center,.today-exchange-goods .mui-text-center{
+	color: #02c091;
+}
+/*今日必兑*/
+.today-exchange-goods{
+	padding: 0 15px;
+	}
+.today-exchange-goods li{
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(238, 238, 238, 0.8);
+}
+.today-exchange-goods li:last-child{border-bottom: none;}
+.today-exchange-goods .mui-text-center{
+	overflow: hidden;
+}
+.today-exchange-detail{padding-top: 10px;}
+.today-exchange-img,.today-exchange-detail{
+	float: left;
+}
+.today-exchange-img{width: 40%;}
+.today-exchange-detail .today-exchange-name{
+	color: #333;
+}
+.today-exchange-detail .today-exchange-title{
+	font-size: 12px;
+	padding: 6px 0;
+	color: #666;
+}
+.today-exchange-detail .only-num{
+	font-size: 12px;
+	padding-top: 10px;
+	color: #666;
+}
+/*热门品牌*/
+.hot-brand.ui-badge-white .m-title{border-bottom: none;}
+.hot-brand-detail{
+	overflow: hidden;
+}
+.hot-brand-detail li{
+	float: left;
+	width: 25%;
+	border-top: 1px solid rgba(238, 238, 238, 0.8);
+	border-right: 1px solid rgba(238, 238, 238, 0.8);
+}
+.hot-brand-detail li:nth-child(4n){border-right:none;}
+.exchange-heart.daily-goods.fashion-bag{
+	background-color: #f4f9fa;
+}
+/*日用品*/
+.y-wrap-seasame .daily-goods li,.y-wrap-seasame .fashion-bag li,.y-wrap-seasame .kitchen-dishware li{
+	width: 49.5%;
+	margin-right: .5%;
+	margin-bottom: .5%;
+	background-color: #fff;
+}
+.exchange-heart.daily-goods{margin-top: 0;}
+.exchange-heart.daily-goods .exchange-heart-goods{margin-bottom: 0;}
+.y-wrap-seasame .daily-goods li:nth-child(2n){
+	margin-right: 0 !important;
+} 
+.daily-goods .daily-goods-name{
+	padding-bottom: 10px;
+	color: #999;
+}
+.daily-goods .last-child a{
+	position: relative;
+	text-align: center;
+}
+.daily-goods .last-child a .m-more{
+	width: 150px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-left: -75px;
+	color: #333;
+}
+.daily-goods .last-child a .m-more img{
+	width: 20%;
+	line-height: 32px;
+	margin:0 auto;
+}
+.daily-goods .last-child a .m-more .t-text{display: inline-block;line-height: 32px;}
+.daily-goods .last-child a .exchange-heart-price,.daily-goods .last-child a .goods-name{color: #fff;}
+
+.daily-goods .last-child .jiantou{
+	color: #ccc;
+	font-size:25px;
+}
+.daily-goods .last-child .daily-goods-name{
+	padding-bottom: 10px;
+}
+.exchange-heart .daily-goods-name.goods-name{
+	width: 98%;
+	padding-bottom: 5px;
+	color: #333;
+}
+img.ui-imageviewer{width:100%; background-size: 100% 100%;}

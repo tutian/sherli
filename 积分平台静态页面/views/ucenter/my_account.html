@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>我的客户</title>
+    <link href="../../css/mui3.5.min.css" rel="stylesheet" />
+     <link rel="stylesheet" type="text/css" href="../../css/app.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css" />
+</head>
+
+<body>
+	<form id="seach" action="#" method="post">
+    <header class="mui-bar mui-bar-nav ps-f">
+        <a class="mui-action-back iconfont icon-jiantou1 mui-pull-left header-back" href="{url:/index/my_show}"></a>
+        <a class="goodslist-search">
+            <span class="mui-icon iconfont icon-sousuo search-btn"></span>
+            <input id="keyword" type="text" placeholder="搜索您找的客户" class="search-input" value="" />
+        </a>
+        <span class="t-sosuo">搜索</span>
+    </header>
+    </form>
+    <div class="mui-content y-myhome">
+        <div class="mui-scroll-wrapper oLevel-scroll-wrapper" id="offCanvasContentScroll">
+            <div class="mui-scroll" style="padding-bottom: 50px;">
+            		<!-- START判断是否有下级 -->
+                <div class="no-history-main first-member-nohistory-main mui-hidden">
+                    <div class="no-history-box">
+                        <span class="iconfont icon-qun no-history-icon"></span>
+                    </div>
+                    <p class="no-history-disc">暂无成员</p>
+                </div>
+                <!-- END判断是否有下级 -->
+                <ul class="mui-table-view my-jiazu-main">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/mui3.5.js"></script>
+    <script src="../../js/zepto.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/my_account.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/china-index.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/china-app.css" />
+
+		<title>提示</title>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="wrap order-false" style="margin-top: 50%;">
+			<div class="content ta-c">
+				<img src="../../images/i-unfound.png" style="width:190px !important;height:130px;"/>
+				<p class="c-333 un-visit" style="padding:20px 0;">您查看的页面不存在</p>
+				<div class="m-mod m-mod1" style="background-color:#f2f2f2;">
+					<div class="youcan c-999" style="line-height:20px;font-size:14px;">
+						<span id="times">5</span> 秒后将返回上一页面
+					</div>
+				</div>
+		    </div>
+		</div>
+		</div>
+		<script src="../../js/mui/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			var wait = 6;
+			function timeout(wait){
+				if(wait == 0){
+					mui.back();
+				}else{
+					wait--;
+					document.getElementById('times').innerHTML = wait;
+					setTimeout(function(){
+						timeout(wait);
+					},1000);
+				}
+			}
+			timeout(wait);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>订单详情</title>
+    <link href="../../css/mui3.5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/app.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css" />
+</head>
+
+<body>
+	<div class="wrap orderdetails wait-delivery-goods">
+		<div class="header">
+			<div class="ps-f">
+				<h1 class="ui-border-b">
+					<a class="mui-action-back iconfont icon-jiantou1 mui-pull-left header-back"></a>
+					订单详情        
+				</h1>
+			</div>
+		</div>
+		<div class="content mui-scroll-wrapper order-pay-wrapper">
+			<div class="mui-scroll" style="transform: translate3d(0px, 0px, 0px) translateZ(0px);">
+				<!-- START未支付过期倒计时 -->
+				<div class="m-top-title ta-c c-purple order-count-time" style="display:block;">
+					<div class="ui-border-b">
+						订单将在
+						<span class="order-info-hour">6</span>小时
+						<span class="order-info-min">6</span>分
+						<span class="order-info-sec">6</span>秒后过期
+					</div>
+				</div>
+				<!-- END未支付过期倒计时 -->
+				<ul class="m-mod1 m-mod order-disc">
+					<li>
+						<div class="m-one">订单编号：1234567890123456</div>
+						<div class="m-two">下单时间：2017-08-08</div>
+						<div class="m-three c-purple order-status">待付款</div>
+					</li>
+				</ul>
+				<a class="order-info-address m-mod m-mod2">
+					<div class="m-msg">
+						<span class="iconfont icon-yonghu-copy weibiaoti101 "></span>
+						<i class="name">张三</i>
+						<i class="p-num f-fr order-info-phone">18888888888</i>
+						<span class="iconfont icon-shouji f-fr shouji" style="position: static;"></span>
+					</div>
+					<div class="m-address">
+						<i class="iconfont icon-dizhi"></i>
+						<span class="order-info-address-disc">广东省深圳市南山区粤海街道白石洲下白石N坊107号</span>
+					</div>
+				</a>
+				<div class="goods-disc-item">
+					<!-- TODO START包裹 -->
+					<div class="m-mod m-mod6 ">
+						<div class="title ovf-h ui-border-b">
+						    <i class="mui-icon iconfont icon-huoche huoche"></i>
+						    <span>包裹1</span>
+						    <span>共<i class="c-purple package-num">2</i>件商品</span>
+						    <a class="z-focus btn b-middle f-fr look-logistics" href="javascript:;" >查看物流</a>
+						</div>
+						<ul class="m-goods-details">
+							<li class="ui-border-b">
+								<a href="javascript:;">
+									<div class="m-img">
+										<img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+									</div>
+									<div class="m-details">
+										<div class="list list1 ovf-h">
+											<div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品</div>
+											<div class="f-fr">
+												<div class="goods-price-num">1111</div>
+											</div>
+										</div>
+										<p>
+											<span class="guess-post">包邮</span>
+											<span class="guess-post">测试</span>
+										</p>
+										<div class="list list3 ovf-h">
+											<i class="f-fl goods-spec-size">
+											<span>颜色：随机</span>
+											<span>尺寸：均码</span>
+											</i>
+											<span class="f-fr c-666">X
+												<span class="y-buy-goods-num">12</span>
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="ui-border-b">
+								<a href="javascript:;">
+									<div class="m-img">
+										<img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+									</div>
+									<div class="m-details">
+										<div class="list list1 ovf-h">
+											<div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品</div>
+											<div class="f-fr">
+												<div class="goods-price-num">1111</div>
+											</div>
+										</div>
+										<p>
+											<span class="guess-post">包邮</span>
+											<span class="guess-post">测试</span>
+										</p>
+										<div class="list list3 ovf-h">
+											<i class="f-fl goods-spec-size">
+											<span>颜色：随机</span>
+											<span>尺寸：均码</span>
+											</i>
+											<span class="f-fr c-666">X
+												<span class="y-buy-goods-num">12</span>
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- END包裹 -->
+					
+					<!-- START示例数据 -->
+					<div class="m-mod m-mod6 ">
+						<div class="title ovf-h ui-border-b">
+						    <i class="mui-icon iconfont icon-huoche huoche"></i>
+						    <span>包裹2</span>
+						    <span>共<i class="c-purple package-num">2</i>件商品</span>
+						    <a class="z-focus btn b-middle f-fr look-logistics" href="javascript:;" >查看物流</a>
+						</div>
+						<ul class="m-goods-details">
+							<li class="ui-border-b">
+								<a href="javascript:;">
+									<div class="m-img">
+										<img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+									</div>
+									<div class="m-details">
+										<div class="list list1 ovf-h">
+											<div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品</div>
+											<div class="f-fr">
+												<div class="goods-price-num">1111</div>
+											</div>
+										</div>
+										<p>
+											<span class="guess-post">包邮</span>
+											<span class="guess-post">测试</span>
+										</p>
+										<div class="list list3 ovf-h">
+											<i class="f-fl goods-spec-size">
+											<span>颜色：随机</span>
+											<span>尺寸：均码</span>
+											</i>
+											<span class="f-fr c-666">X
+												<span class="y-buy-goods-num">12</span>
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="ui-border-b">
+								<a href="javascript:;">
+									<div class="m-img">
+										<img class="mui-media-object mui-pull-left" src="../../img/jrbd1.png">
+									</div>
+									<div class="m-details">
+										<div class="list list1 ovf-h">
+											<div class="f-fl goods-name-details">示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品示例商品</div>
+											<div class="f-fr">
+												<div class="goods-price-num">1111</div>
+											</div>
+										</div>
+										<p>
+											<span class="guess-post">包邮</span>
+											<span class="guess-post">测试</span>
+										</p>
+										<div class="list list3 ovf-h">
+											<i class="f-fl goods-spec-size">
+											<span>颜色：随机</span>
+											<span>尺寸：均码</span>
+											</i>
+											<span class="f-fr c-666">X
+												<span class="y-buy-goods-num">12</span>
+											</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- END示例数据 -->
+					
+				</div>
+				<div class="m-mod m-mod8">
+					<ul class="order-info-cash">
+						<li>商品总金额<span class="order-info-total-num ">666.66</span></li>
+						<li>运费<span class="order-info-tans-num ">0</span></li>
+					</ul>
+					<div class="m-submit m-bottom ta-r">
+						<span class="c-333">实付金额：</span>
+						<i class="c-purple order-info-cash-num ">666.66</i>
+					</div>
+				</div>
+			</div>
+            <!-- START底部按钮 -->
+            <div class="footer ui-border-t">
+				<ul class="m-bottom order-all-footer">
+					<li class="wait-pay-bottom">
+						<a href="javascript:;" class="z-focus b-delete btn ">去付款</a>
+					</li>
+					<li class="m-btn b-check ">
+						<span class="b-check btn order-cancel-btn">取消订单</span>
+					</li>
+				</ul>
+			</div>
+			<!-- END底部按钮 -->
+		</div>
+	</div>
+    <script src="../../js/mui3.5.min.js"></script>
+    <script src="../../js/zepto.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script type="text/javascript">
+    		mui(".order-pay-wrapper").scroll(mui.scrollOption);
+    </script>
+</body>
+</html>

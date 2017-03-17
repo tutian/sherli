@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>收货地址</title>
+    <link href="../../css/mui3.5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/mui.picker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/app.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont.css" />
+</head>
+
+<body>
+    <div class="wrap receiptaddress">
+        <div class="header">
+            <div class="m-h3 ps-f">
+				<h1 class="ui-border-b">
+					<a class="mui-action-back iconfont icon-jiantou1 mui-pull-left header-back"></a>
+					收货地址
+				</h1>
+            </div>
+        </div>
+        <div class="content mui-scroll-wrapper order-pay-wrapper address-wrapper-scroll">
+            <div class="mui-scroll" style="padding-bottom: 70px;">
+            		<!-- 无收货地址显示 -->
+	            	<div class="no-history-main address-nohistory-main" style="display: none;">
+	                <div class="no-history-box">
+	                    <span class="iconfont icon-dizhi no-history-icon"></span>
+	                </div>
+	                <p class="no-history-disc">暂无收货地址</p>
+	                <a href="{url:/index/add_address}" class="btn z-focus add-address">新增收货地址</a>
+	            </div>
+	            <!-- END无收货地址显示 -->
+	            <!-- 有收货地址显示 -->
+                <ul class="m-data my-address-content">
+					<li class='my-address-item'>
+						<a href="javascript:;" class='m-one ps-r my-address-default choose_address' data-id='123'>
+							<div class='m-msg list'>
+								<span class='iconfont icon-yonghu-copy'></span>
+								<i class='name'>张三</i>
+								<i class='p-num f-fr'>18888888888</i>
+								<span class='iconfont icon-shouji shouji f-fr'></span>
+							</div>
+							<div class='m-address list'>
+								<i class='iconfont'>&#xe65e;</i>
+								<span class="mui-ellipsis">XXX省XXX市XXX区XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxXXXXXX</span>
+							</div>
+							<i class='mui-icon mui-icon-arrowright'></i>
+						</a>
+						<div class='m-set-address list ovf-h z-focus' data-id="123">
+							<div class='m-one ovf-h f-fl set-default-address'>
+								<span class='iconfont mui-pull-left icon-queren dui'></span>
+								<span class='f-fl'>设为默认地址</span>
+							</div>
+							<div class='m-two ovf-h f-fr del-my-address'>
+								<span class='f-fr mui-icon mui-icon-trash' style="line-height:36px;font-size:16px;color: #333; vertical-align:top;">删除</span>
+							</div>
+						</div>
+					</li>
+					
+					<li class='my-address-item'>
+						<a href="javascript:;" class='m-one ps-r my-address-default choose_address' data-id='456'>
+							<div class='m-msg list'>
+								<span class='iconfont icon-yonghu-copy'></span>
+								<i class='name'>张三</i>
+								<i class='p-num f-fr'>18888888888</i>
+								<span class='iconfont icon-shouji shouji f-fr'></span>
+							</div>
+							<div class='m-address list'>
+								<i class='iconfont'>&#xe65e;</i>
+								<span class="mui-ellipsis">XXX省XXX市XXX区XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxXXXXXX</span>
+							</div>
+							<i class='mui-icon mui-icon-arrowright'></i>
+						</a>
+						<div class='m-set-address list ovf-h z-focus' data-id='456'>
+							<div class='m-one ovf-h f-fl set-default-address'>
+								<span class='iconfont mui-pull-left icon-queren dui'></span>
+								<span class='f-fl'>设为默认地址</span>
+							</div>
+							<div class='m-two ovf-h f-fr del-my-address'>
+								<span class='f-fr mui-icon mui-icon-trash' style="line-height:36px;font-size:16px;color: #333; vertical-align:top;">删除</span>
+							</div>
+						</div>
+					</li>
+                </ul>
+                <!-- END有收货地址显示 -->
+            </div>
+        </div>
+        <!-- 有收货地址显示 -->
+        <div class="m-foote-add-address" style="display: block">
+            <a href="javascript:;"  class="btn z-focus add-address">新增收货地址</a>
+        </div>
+        <!-- END有收货地址显示 -->
+    </div>
+    <script src="../../js/mui3.5.min.js"></script>
+    <script src="../../js/zepto.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/address.js"></script>
+</body>
+
+</html>

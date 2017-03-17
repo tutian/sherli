@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>商品列表</title>
+    <link rel="stylesheet" type="text/css" href="../../css/mui3.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../fonts/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/app.css" />
+    <style>
+        .goods-disc .mui-table-view-cell > a:not(.mui-btn){
+            white-space: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+        <div class="mui-inner-wrap">
+            <div class="header-wrapper">
+            		<form id="seach" action="#" method="post">
+                <header class="header-search">
+                    <a class="mui-action-back  iconfont icon-jiantou1 mui-pull-left header-back"></a>
+                    <a class="goodslist-search">
+                        <span class="mui-icon iconfont icon-sousuo search-btn"></span>
+                        <input id="keyword" type="text" placeholder="点击搜索您要的商品" class="search-input" value="" />
+                    </a>
+                    <span class="t-sosuo">搜索</span>
+                </header>
+                </form>
+                <div class="goodslist-nav-bar">
+                    <a class="goodslist-bar-item goodslist-default active" data-sort="0">默认<span class="pla"></span></a>
+                    <a class="goodslist-bar-item goodslist-sell" data-sort="1">销量 <span class="arrow"></span></a>
+                    <a class="goodslist-bar-item goodslist-hot" data-sort="2">人气<span class="arrow"></span></a>
+                    <a class="goodslist-bar-item goodslist-price" data-sort="3">价格<span class="arrow"></span></a>
+                    <a id="offCanvasBtn" href="#offCanvasSide" class="goodslist-bar-item off-canvas-btn">筛选<span class="mui-icon-extra mui-icon-extra-filter goods-icon-filter"></span></a>
+                </div>
+            </div>
+            <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper goodslist-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="goods-main" style="padding-bottom: 0;">
+                        <ul class="mui-table-view mui-grid-view mui-grid-9 goods-disc" id="load_goods_list">
+                				<!--商品列表-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- off-canvas backdrop -->
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+        <!--侧滑菜单部分-->
+        <aside id="offCanvasSide" class="mui-off-canvas-right" style="visibility: visible; transform: translate3d(135%, 0, 0);">
+            <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+                <div class="mui-scroll" style="transform: translate3d(0px, 0px, 0px) translateZ(0px); transition-duration: 0ms;">
+                    <header class="mui-bar mui-bar-nav aside-bar ">
+                        <a class="iconfont icon-jiantou1 mui-pull-left header-back" id="offCanvasHide"></a>
+                        <a class="mui-btn mui-btn-link mui-pull-right aside-sure-btn">完成</a>
+                        <h1 class="mui-title">筛选</h1>
+                    </header>
+                    <div class="mui-content aside-content aside-main">
+                        <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted aside-table-view">
+                            <li class="mui-table-view-cell">
+                                <a id="aside-price" class="mui-navigate-right aside-cell-item">
+                                    <span class="aside-item-name aside-price-name">价格</span>
+                                    <span class="aside-right price-group">不限</span>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a id="aside-brand" class="mui-navigate-right aside-cell-item">
+                                    <span class="aside-item-name aside-brand-name">品牌</span>
+                                    <span class="aside-right aside-brand-disc brand-group">不限</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="aside-clear">
+                            <a class="mui-btn aside-clear-btn">清除选项</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="aside-page aside-price">
+                    <header class="mui-bar mui-bar-nav aside-bar">
+                        <a class="mui-icon-left-nav mui-action-back iconfont icon-jiantou1 mui-pull-left header-back aside-left-icon"></a>
+                        <a class="mui-btn mui-btn-link mui-pull-right" id="price-group">确定</a>
+                        <h1 class="mui-title">价格</h1>
+                    </header>
+                    <div class="mui-content aside-main price-content">
+                        <ul class="mui-table-view mui-table-view-radio price-group">
+                        	<!--价格筛选-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="aside-page aside-brand">
+                    <header class="mui-bar mui-bar-nav aside-bar">
+                        <a class="mui-icon-left-nav mui-action-back iconfont icon-jiantou1 mui-pull-left header-back aside-left-icon"></a>
+                        <a class="mui-btn mui-btn-link mui-pull-right" id="brand-group">确定</a>
+                        <h1 class="mui-title">品牌</h1>
+                    </header>
+                    <div class="mui-content aside-main brand-content brand-group">
+                        <form class="mui-input-group goodslist-brand-group">
+                        	<!--品牌筛选-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="../../js/mui3.5.min.js"></script>
+    <script src="../../js/mui/mui.lazyload.js"></script>
+    <script src="../../js/mui/mui.lazyload.img.js"></script>
+    <script src="../../js/zepto.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/goodslist/category.js"></script>
+</body>
+</html>
